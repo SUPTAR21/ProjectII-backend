@@ -4,9 +4,9 @@ services:
     image: ghcr.io/suptar21/projectii-backend:master
     container_name: studart-backend
     environment:
-      - CONECTION: ${CONECTION}
-      - JWT_SECRET: ${JWT_SECRET}
-      - ALLOWED_CORS: ${ALLOWED_CORS}
+      - CONECTION=${CONECTION}
+      - JWT_SECRET=${JWT_SECRET}
+      - ALLOWED_CORS=${ALLOWED_CORS}
     env_file:
       - ./.env
     ports:
